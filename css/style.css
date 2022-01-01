@@ -1,0 +1,62 @@
+audio{
+    width: 100%;
+}
+#lyric{
+    margin-top: 50px;
+}
+.text-lyric {
+    opacity: 0;
+    font-size: 0;
+    height: 0;
+    transition: all 1s;
+}
+
+.text-lyric.show {
+    opacity: 1;
+    font-size: 14px;
+    height: 20px;
+    margin-bottom: 2px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.text-lyric.show.current {
+    color: blue;
+    font-size: 24px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+.img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;   
+    overflow: hidden;
+    position: relative;
+}
+.rotate{
+    animation: rotating 10s linear infinite;
+}
+.img .thumb{
+    height: 100%;
+}
+.img .eq{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    border-radius: 50%;
+}
